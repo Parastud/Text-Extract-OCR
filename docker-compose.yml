@@ -1,0 +1,9 @@
+# Local convenience: `docker compose up --build` → sidecar on http://127.0.0.1:8001
+services:
+  ocr:
+    build: .
+    ports:
+      - "8001:8001"
+    environment:
+      - PORT=8001
+    restart: unless-stopped

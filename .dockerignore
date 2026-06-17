@@ -1,0 +1,8 @@
+# Keep the build context small — never ship the local venv, caches, or samples.
+.venv/
+__pycache__/
+*.pyc
+samples/
+.git/
+.gitignore
+.python-version
